@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../assets/fonts/poppins/Poppins-Thin.ttf") format("ttf");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../assets/fonts/poppins/Poppins-Light.ttf") format("ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../assets/fonts/poppins/Poppins-Regular.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../assets/fonts/poppins/Poppins-Medium.ttf") format("ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../assets/fonts/poppins/Poppins-SemiBold.ttf") format("ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../assets/fonts/poppins/Poppins-Bold.ttf") format("ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../assets/fonts/poppins/Poppins-ExtraBold.ttf") format("ttf");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../assets/fonts/poppins/Poppins-Black.ttf") format("ttf");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@layer base {
+    body {
+        @apply bg-gray-50;
+    }
+}
+
+.navItem {
+    @apply relative font-medium rounded-lg px-3 py-2 text-sm text-gray-600 transition-colors delay-150 hover:text-gray-900 hover:bg-gray-100 hover:delay-0;
+}
+
+.footerNavItem {
+    @apply text-gray-500 hover:text-gray-700 hover:bg-gray-100 px-2 py-1 rounded-lg cursor-pointer transition-all duration-500 ease-in-out
+}
+
+.animate-spin-reverse-slower {
+    animation: spin-reverse 6s linear infinite;
+}
+
+.animate-spin-slow {
+    animation: spin 4s linear infinite;
+}
+
+.animate-spin-slower {
+    animation: spin 6s linear infinite;
+}
+
+.animate-marquee-1 {
+    animation: marquee 24s linear infinite;
+}
+
+.animate-marquee-2 {
+    animation: marquee 35s linear infinite;
+}
+
+.animate-marquee-3 {
+    animation: marquee 30s linear infinite;
+}
+
+.mask-image {
+    background-image: linear-gradient(to bottom, #ffffff, #FFFFFF59);
+}
+
+.mask-image-reverse {
+    background-image: linear-gradient(to bottom, #FFFFFF59, #ffffff);
+}
+
+@keyframes spin-reverse {
+    100% {
+        transform: rotate(-1turn);
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes marquee {
+    100% {
+        transform: translateY(-50%);
+    }
+}
